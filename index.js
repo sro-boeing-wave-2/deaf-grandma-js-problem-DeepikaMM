@@ -2,10 +2,7 @@
  * @fileOverview Contains logic of Deaf Grandma
  */
 const isUppercase = require('./isUpperCase');
-/**
- * const getRandomValue = require('./getRandomValue');
- */
-
+const getRandomValue = require('./getRandomValue');
 const { prompt, print } = require('./prompt-print');
 
 /**
@@ -28,10 +25,7 @@ while (flag === true) {
         break;
       }
     }
-    print('NO, NOT SINCE 1930');
-    /**
-     * print('NO, NOT SINCE '.concat(getRandomValue(1932, 1950)));
-     */
+    print('NO, NOT SINCE '.concat(getRandomValue(1930, 1950)));
   } else {
     count = 0;
     print('HUH?! SPEAK UP, SONNY!');
